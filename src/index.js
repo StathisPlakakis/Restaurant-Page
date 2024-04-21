@@ -1,5 +1,5 @@
 import './style.css';
-// import Image from './images/background-image.jpg';
+import Image from './images/background-image.jpg';
 
 function component() {
     const element = document.createElement('div');
@@ -9,10 +9,10 @@ function component() {
     h1.textContent = 'HIIIIIII';
     element.appendChild(h1);
 
-    // const myImage = new Image();
-    // myImage.src = Image;
+    const myImage = new Image();
+    myImage.src = Image;
 
-    // element.appendChild(myImage);
+    element.appendChild(myImage);
 
     return element;
 } 

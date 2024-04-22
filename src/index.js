@@ -11,7 +11,7 @@ class display {
     content () {
         const header = document.querySelector('.header');
         const domain = document.querySelector('header');
-        domain.textContent = "Soft Rest";
+        domain.textContent = "Code & Coffee";
         const navBar = document.querySelector('nav');
         const content = document.querySelector('#content');
 
@@ -33,6 +33,11 @@ class display {
         const blackFilter = document.createElement('div');
         blackFilter.classList.add('filter');
         content.appendChild(blackFilter);
+
+        const welcomingText = document.createElement('p');
+        welcomingText.classList.add('welcome');
+        welcomingText.textContent = 'Welcome to "Code & Coffee," a unique place designed with software developers in mind. '
+        blackFilter.appendChild(welcomingText);
 
     }
 

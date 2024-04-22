@@ -1,4 +1,8 @@
 .hello {
-    color: red;
+    height: 150px;
+    background-size: cover;  /* Fit the image to the element's dimensions */
+    background-repeat: no-repeat;  /* Avoids repeating the image */
+    background-position: center; 
+    color: rgb(244, 91, 92);
     background: url(./images/background-image.jpg);
 }

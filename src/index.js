@@ -1,6 +1,7 @@
 import './style.css';
 import contentLoad from './page-load';
 import welcomePage from './welcome';
+import homePage from './home';
 
 
 
@@ -25,7 +26,12 @@ class display {
 
         const home = document.createElement('li');
         home.classList.add('home');
-        home.textContent = "Home";
+        home.textContent = "Info";
+        home.addEventListener('click', () => {
+            content.innerHTML = '';
+            let newContent = homePage();
+            content.appendChild(newContent);
+        });
         navBar.appendChild(home);
 
         const menu = document.createElement('li');
@@ -33,10 +39,10 @@ class display {
         menu.textContent = "Menu";
         navBar.appendChild(menu);
 
-        const contact = document.createElement('li');
-        contact.classList.add('contact');
-        contact.textContent = "Contact";
-        navBar.appendChild(contact);
+        const about = document.createElement('li');
+        about.classList.add('about');
+        about.textContent = "About";
+        navBar.appendChild(about);
 
         const blackFilter = document.createElement('div');
         blackFilter.classList.add('filter');

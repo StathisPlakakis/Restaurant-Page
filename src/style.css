@@ -11,10 +11,7 @@ body, img, p, h1, h2, li, header, nav {
     padding: 0;
 }
 
-body {
-    background-color: black;
-    
-}
+
 
 .header {
     height: 10vh;
@@ -68,6 +65,10 @@ nav li:hover {
 
 .filter {
     display: grid;
+    grid-auto-flow: column;
+    align-content: center ;
+    justify-content: center;
+    gap: 20px;
     position: relative;
     z-index: 2;
     background-color: var(--filter-color);
@@ -89,8 +90,25 @@ nav li:hover {
     color: var(--header-text-color);
     font-size: 2rem;
     text-align: center;
-    align-self: center;
     background-color: var(--background-of-welcome-text);
     padding: 50px;
     animation: fadeIn 2s ease-in;
+}
+
+.homet {
+    color: var(--header-text-color);
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: var(--background-of-welcome-text);
+    padding: 50px;
+    animation: fadeIn 2s ease-in;
+
+}
+
+.homet h2 {
+    margin: 20px;
+}
+
+.homet p {
+    margin: 10px;
 }

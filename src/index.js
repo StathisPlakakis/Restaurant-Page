@@ -1,5 +1,7 @@
 import './style.css';
 import contentLoad from './page-load';
+import welcomePage from './welcome';
+
 
 
 
@@ -9,11 +11,17 @@ class display {
     }
 
     content () {
-        const header = document.querySelector('.header');
-        const domain = document.querySelector('header');
-        domain.textContent = "Code & Coffee";
+
         const navBar = document.querySelector('nav');
         const content = document.querySelector('#content');
+
+        const domain = document.querySelector('header');
+        domain.textContent = "Code & Coffee";
+        domain.addEventListener('click', () => {
+            content.innerHTML = '';
+            let newContent = welcomePage();
+            content.appendChild(newContent);
+        });
 
         const home = document.createElement('li');
         home.classList.add('home');

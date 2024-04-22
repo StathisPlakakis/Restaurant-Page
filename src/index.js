@@ -9,9 +9,25 @@ class display {
     }
 
     content () {
-        const element = document.createElement('h1');
-        element.textContent = 'jdsfhjkjsadbfkas,';
-        document.querySelector('#content').appendChild(element);
+        const header = document.querySelector('.header');
+
+
+        const domain = document.querySelector('header');
+        domain.textContent = "Soft Rest";
+
+        const navBar = document.querySelector('nav');
+
+        const home = document.createElement('li');
+        home.textContent = "Home";
+        navBar.appendChild(home);
+
+        const menu = document.createElement('li');
+        menu.textContent = "Menu";
+        navBar.appendChild(menu);
+
+        const contact = document.createElement('li');
+        contact.textContent = "Contact";
+        navBar.appendChild(contact);
     }
 
     addContent () {

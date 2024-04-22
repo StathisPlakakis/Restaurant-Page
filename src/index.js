@@ -1,4 +1,6 @@
 import './style.css';
+import contentLoad from './page-load';
+
 
 
 class display {
@@ -6,12 +8,18 @@ class display {
         this.name = 'Restaurant Page';
     }
 
-    render () {
-        // const element = document.createElement('div');
-        // element.setAttribute('id', 'content');
-        // document.body.appendChild(element);
+    content () {
+        const element = document.createElement('h1');
+        element.textContent = 'jdsfhjkjsadbfkas,';
+        document.querySelector('#content').appendChild(element);
     }
+
+    addContent () {
+        contentLoad(this.content);
+    }
+
 }
 
 const restaurantDisplay = new display();
-restaurantDisplay.render();
+restaurantDisplay.addContent();
+

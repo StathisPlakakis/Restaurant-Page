@@ -1,3 +1,9 @@
+:root {
+    --header-text-color: rgb(247, 163, 78);
+    --filter-color: rgba(22, 18, 13, 0.9);
+}
+
+
 body, img, p, h1, h2, li, header, nav {
     margin: 0;
     padding: 0;
@@ -5,26 +11,30 @@ body, img, p, h1, h2, li, header, nav {
 
 body {
     background-color: black;
-    z-index: 2;
+    
 }
 
 .header {
     height: 10vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color: aliceblue;
+    color: var(--header-text-color);
     align-items: center;
     background-color: black;
 }
 
 header {
     font-size: 2rem;
+    margin-left: 50px;
 }
 
 nav {
     justify-self: end;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-right: 50px;
+
 }
 
 nav li {
@@ -36,10 +46,19 @@ nav li {
 
 
 #content {
+    position: relative;
+    z-index: 1;
     height: 90vh;
     background: url(./images/background-image.jpg);
     background-size: cover;  
     background-repeat: no-repeat;  
     background-position: center; 
     color: aliceblue;
+}
+
+.filter {
+    position: relative;
+    z-index: 2;
+    background-color: var(--filter-color);
+    height: 100%;
 }

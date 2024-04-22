@@ -28,6 +28,10 @@ header {
     margin-left: 50px;
 }
 
+header:hover {
+    cursor: pointer;
+}
+
 nav {
     justify-self: end;
     display: grid;
@@ -40,10 +44,13 @@ nav {
 nav li {
     list-style-type: none;
     font-size: 2rem;
-
+    transition: transform 0.3s ease;
 }
 
-
+nav li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 #content {
     position: relative;

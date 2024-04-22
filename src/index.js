@@ -1,10 +1,17 @@
 import './style.css';
 
-function component() {
-    const element = document.createElement('div');
-    element.setAttribute('id', 'content');
-    
-    return element;
-} 
 
-document.body.appendChild(component());
+class display {
+    constructor () {
+        this.name = 'Restaurant Page';
+    }
+
+    render () {
+        const element = document.createElement('div');
+        element.setAttribute('id', 'content');
+        document.body.appendChild(element);
+    }
+}
+
+const restaurantDisplay = new display();
+restaurantDisplay.render();

@@ -1,8 +1,12 @@
-.hello {
-    height: 150px;
-    background-size: cover;  /* Fit the image to the element's dimensions */
-    background-repeat: no-repeat;  /* Avoids repeating the image */
-    background-position: center; 
-    color: rgb(244, 91, 92);
+body, img, p, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    height: 100vh;
     background: url(./images/background-image.jpg);
+    background-size: cover;  
+    background-repeat: no-repeat;  
+    background-position: center; 
 }

@@ -7,9 +7,9 @@ class display {
     }
 
     render () {
-        const element = document.createElement('div');
-        element.setAttribute('id', 'content');
-        document.body.appendChild(element);
+        // const element = document.createElement('div');
+        // element.setAttribute('id', 'content');
+        // document.body.appendChild(element);
     }
 }
 

@@ -2,6 +2,7 @@ import './style.css';
 import contentLoad from './page-load';
 import welcomePage from './welcome';
 import homePage from './home';
+import aboutPage from './about';
 
 
 
@@ -42,6 +43,11 @@ class display {
         const about = document.createElement('li');
         about.classList.add('about');
         about.textContent = "About";
+        about.addEventListener('click', () => {
+            content.innerHTML = '';
+            let newContent = aboutPage();
+            content.appendChild(newContent);
+        });
         navBar.appendChild(about);
 
         const blackFilter = document.createElement('div');

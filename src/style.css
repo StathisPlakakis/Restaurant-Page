@@ -30,13 +30,14 @@ header {
 
 header:hover {
     cursor: pointer;
+    color: var(--header-text-color);
 }
 
 nav {
     justify-self: end;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 45px;
     margin-right: 50px;
 
 }
@@ -44,12 +45,12 @@ nav {
 nav li {
     list-style-type: none;
     font-size: 2rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 nav li:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 
 #content {
@@ -86,7 +87,7 @@ nav li:hover {
   
 
 
-.welcome {
+.welcome, .homet, .aboutt {
     color: var(--header-text-color);
     font-size: 2rem;
     text-align: center;
@@ -95,20 +96,13 @@ nav li:hover {
     animation: fadeIn 2s ease-in;
 }
 
-.homet {
-    color: var(--header-text-color);
-    font-size: 1.3rem;
-    text-align: center;
-    background-color: var(--background-of-welcome-text);
-    padding: 50px;
-    animation: fadeIn 2s ease-in;
-
-}
 
 .homet h2 {
     margin: 20px;
+    font-size: 1.5rem;
 }
 
 .homet p {
     margin: 10px;
+    font-size: 1.5rem;
 }

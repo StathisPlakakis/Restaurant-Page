@@ -6,7 +6,7 @@
 }
 
 
-body, img, p, h1, h2, li, header, nav {
+body, img, p, h1, h2, h3, h4, li, header, nav {
     margin: 0;
     padding: 0;
 }
@@ -105,4 +105,36 @@ nav li:hover {
 .homet p {
     margin: 10px;
     font-size: 1.5rem;
+}
+
+
+.background {
+    background-color: var(--filter-color);
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuu {
+    box-sizing: border-box;
+    height: 650px;
+    width: 50vw;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: var(--filter-color);
+    color: var(--header-text-color);
+    display: grid;
+    gap: 50px;
+    overflow: scroll;
+    padding: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+.menuu h2 {
+    margin-bottom: 20px;
+}
+
+.menuu h4 {
+    margin-bottom: 10px;
 }

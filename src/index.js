@@ -3,6 +3,7 @@ import contentLoad from './page-load';
 import welcomePage from './welcome';
 import homePage from './home';
 import aboutPage from './about';
+import menuPage from './menu';
 
 
 
@@ -25,6 +26,17 @@ class display {
             content.appendChild(newContent);
         });
 
+        
+        const menu = document.createElement('li');
+        menu.classList.add('menu');
+        menu.textContent = "Menu";
+        menu.addEventListener('click', () => {
+            content.innerHTML = '';
+            let newContent = menuPage();
+            content.appendChild(newContent);
+        });
+        navBar.appendChild(menu);
+
         const home = document.createElement('li');
         home.classList.add('home');
         home.textContent = "Info";
@@ -34,11 +46,6 @@ class display {
             content.appendChild(newContent);
         });
         navBar.appendChild(home);
-
-        const menu = document.createElement('li');
-        menu.classList.add('menu');
-        menu.textContent = "Menu";
-        navBar.appendChild(menu);
 
         const about = document.createElement('li');
         about.classList.add('about');
